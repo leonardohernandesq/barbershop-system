@@ -1,11 +1,13 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
-      "builder": "NIXPACKS"
+    "builder": "NIXPACKS",
+    "buildCommand": "yarn run build:backend"
   },
   "deploy": {
-      "startCommand": "yarn dev",
-      "restartPolicyType": "ON_FAILURE",
-      "restartPolicyMaxRetries": 10
+    "numReplicas": 1,
+    "startCommand": "yarn dev",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
   }
 }
