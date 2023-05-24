@@ -6,6 +6,6 @@
   "deploy": {
       "startCommand": "yarn dev",
       "restartPolicyType": "ON_FAILURE",
-      "restartPolicyMaxRetries": 10
+      "restartPolicyMaxRetries": 8
   }
 }
