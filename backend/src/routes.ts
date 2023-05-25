@@ -24,6 +24,9 @@ import { CreatePortalController } from './controllers/subscriptions/CreatePortal
 const router = Router();
 
 // ---- ROTAS USER ----
+
+router.get('/', (req, res) => {res.send('hello world')})
+
 router.post('/users', new CreateUserController().handle)
 router.post('/session', new AuthUserController().handle)
 
